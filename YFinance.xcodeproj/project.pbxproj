@@ -7,41 +7,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		164CB1A7D373AEFB80EE4705 /* Pods_YFinanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9622FBBC77D8959F81F71101 /* Pods_YFinanceTests.framework */; };
+		2647A6725A3BE239800F1F63 /* Pods_YFinance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E014F3AAB2DA3322D4E007 /* Pods_YFinance.framework */; };
+		FA5A4669283234D100312246 /* MarketDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A4668283234D100312246 /* MarketDataTest.swift */; };
+		FA749AB7282EFC2D009EC272 /* StockDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA749AB6282EFC2D009EC272 /* StockDetailsVC.swift */; };
 		FA95FB6F282CD7B7005D44B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95FB6E282CD7B7005D44B6 /* AppDelegate.swift */; };
 		FA95FB71282CD7B7005D44B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95FB70282CD7B7005D44B6 /* SceneDelegate.swift */; };
-		FA95FB73282CD7B7005D44B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95FB72282CD7B7005D44B6 /* ViewController.swift */; };
+		FA95FB73282CD7B7005D44B6 /* MarketListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95FB72282CD7B7005D44B6 /* MarketListVC.swift */; };
 		FA95FB76282CD7B7005D44B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA95FB74282CD7B7005D44B6 /* Main.storyboard */; };
 		FA95FB78282CD7BC005D44B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA95FB77282CD7BC005D44B6 /* Assets.xcassets */; };
 		FA95FB7B282CD7BC005D44B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA95FB79282CD7BC005D44B6 /* LaunchScreen.storyboard */; };
+		FA95FB8B282CDD9A005D44B6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95FB8A282CDD9A005D44B6 /* DataModel.swift */; };
+		FA95FB8E282CE67E005D44B6 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95FB8D282CE67E005D44B6 /* MarketViewModel.swift */; };
+		FA95FB90282CF9AF005D44B6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95FB8F282CF9AF005D44B6 /* APIRequest.swift */; };
+		FAAD2F89283247580098A157 /* APIRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD2F88283247580098A157 /* APIRequestTest.swift */; };
+		FAAD2F8B28336D7B0098A157 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD2F8A28336D7A0098A157 /* Extentions.swift */; };
+		FAAD2F912833A9F50098A157 /* StockDetailsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD2F902833A9F50098A157 /* StockDetailsTest.swift */; };
+		FABE5118282D1C4B0072FE45 /* StockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABE5117282D1C4B0072FE45 /* StockCell.xib */; };
+		FACD7795282D31770084A462 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD7794282D31770084A462 /* StockModel.swift */; };
+		FACD7797282D350B0084A462 /* URLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD7796282D350B0084A462 /* URLS.swift */; };
+		FAE832CD282D14C200D69646 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE832CC282D14C200D69646 /* StockCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FA5A46632832341E00312246 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA95FB63282CD7B7005D44B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA95FB6A282CD7B7005D44B6;
+			remoteInfo = YFinance;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1F258C1006223749E209A014 /* Pods-YFinance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFinance.release.xcconfig"; path = "Target Support Files/Pods-YFinance/Pods-YFinance.release.xcconfig"; sourceTree = "<group>"; };
+		45E014F3AAB2DA3322D4E007 /* Pods_YFinance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YFinance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		833633361FFCC62D5ECFF0AE /* Pods-YFinanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFinanceTests.debug.xcconfig"; path = "Target Support Files/Pods-YFinanceTests/Pods-YFinanceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A88528BB0673FB9FE9363E7 /* Pods-YFinanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFinanceTests.release.xcconfig"; path = "Target Support Files/Pods-YFinanceTests/Pods-YFinanceTests.release.xcconfig"; sourceTree = "<group>"; };
+		9622FBBC77D8959F81F71101 /* Pods_YFinanceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YFinanceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0736E692AAA6F36EFFAB53C /* Pods-YFinance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFinance.debug.xcconfig"; path = "Target Support Files/Pods-YFinance/Pods-YFinance.debug.xcconfig"; sourceTree = "<group>"; };
+		FA5A465F2832341E00312246 /* YFinanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFinanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5A4668283234D100312246 /* MarketDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataTest.swift; sourceTree = "<group>"; };
+		FA749AB6282EFC2D009EC272 /* StockDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsVC.swift; sourceTree = "<group>"; };
 		FA95FB6B282CD7B7005D44B6 /* YFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA95FB6E282CD7B7005D44B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA95FB70282CD7B7005D44B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA95FB72282CD7B7005D44B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA95FB72282CD7B7005D44B6 /* MarketListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListVC.swift; sourceTree = "<group>"; };
 		FA95FB75282CD7B7005D44B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA95FB77282CD7BC005D44B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA95FB7A282CD7BC005D44B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA95FB7C282CD7BC005D44B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA95FB8A282CDD9A005D44B6 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		FA95FB8D282CE67E005D44B6 /* MarketViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		FA95FB8F282CF9AF005D44B6 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		FAAD2F88283247580098A157 /* APIRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestTest.swift; sourceTree = "<group>"; };
+		FAAD2F8A28336D7A0098A157 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		FAAD2F902833A9F50098A157 /* StockDetailsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsTest.swift; sourceTree = "<group>"; };
+		FABE5117282D1C4B0072FE45 /* StockCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StockCell.xib; sourceTree = "<group>"; };
+		FACD7794282D31770084A462 /* StockModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
+		FACD7796282D350B0084A462 /* URLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
+		FAE832CC282D14C200D69646 /* StockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FA5A465C2832341E00312246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				164CB1A7D373AEFB80EE4705 /* Pods_YFinanceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA95FB68282CD7B7005D44B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2647A6725A3BE239800F1F63 /* Pods_YFinance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91E929711670B5988ADD886F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0736E692AAA6F36EFFAB53C /* Pods-YFinance.debug.xcconfig */,
+				1F258C1006223749E209A014 /* Pods-YFinance.release.xcconfig */,
+				833633361FFCC62D5ECFF0AE /* Pods-YFinanceTests.debug.xcconfig */,
+				8A88528BB0673FB9FE9363E7 /* Pods-YFinanceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A56CBA3F727F101BC52B9350 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45E014F3AAB2DA3322D4E007 /* Pods_YFinance.framework */,
+				9622FBBC77D8959F81F71101 /* Pods_YFinanceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA5A46602832341E00312246 /* YFinanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA5A4668283234D100312246 /* MarketDataTest.swift */,
+				FAAD2F902833A9F50098A157 /* StockDetailsTest.swift */,
+				FAAD2F88283247580098A157 /* APIRequestTest.swift */,
+			);
+			path = YFinanceTests;
+			sourceTree = "<group>";
+		};
 		FA95FB62282CD7B7005D44B6 = {
 			isa = PBXGroup;
 			children = (
 				FA95FB6D282CD7B7005D44B6 /* YFinance */,
+				FA5A46602832341E00312246 /* YFinanceTests */,
 				FA95FB6C282CD7B7005D44B6 /* Products */,
+				91E929711670B5988ADD886F /* Pods */,
+				A56CBA3F727F101BC52B9350 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				FA95FB6B282CD7B7005D44B6 /* YFinance.app */,
+				FA5A465F2832341E00312246 /* YFinanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,27 +142,121 @@
 		FA95FB6D282CD7B7005D44B6 /* YFinance */ = {
 			isa = PBXGroup;
 			children = (
-				FA95FB6E282CD7B7005D44B6 /* AppDelegate.swift */,
-				FA95FB70282CD7B7005D44B6 /* SceneDelegate.swift */,
-				FA95FB72282CD7B7005D44B6 /* ViewController.swift */,
+				FAAD2F942834C8280098A157 /* Application */,
+				FAAD2F932834C8140098A157 /* Resources */,
+				FAE832CB282D14A400D69646 /* Cells */,
+				FA95FB8C282CE671005D44B6 /* ViewModel */,
+				FA95FB82282CDCA6005D44B6 /* Model */,
+				FA95FB84282CDCC4005D44B6 /* Controller */,
+				FA95FB87282CDCEB005D44B6 /* Helper */,
+				FA95FB85282CDCD1005D44B6 /* NetWorkManager */,
 				FA95FB74282CD7B7005D44B6 /* Main.storyboard */,
-				FA95FB77282CD7BC005D44B6 /* Assets.xcassets */,
 				FA95FB79282CD7BC005D44B6 /* LaunchScreen.storyboard */,
 				FA95FB7C282CD7BC005D44B6 /* Info.plist */,
 			);
 			path = YFinance;
 			sourceTree = "<group>";
 		};
+		FA95FB82282CDCA6005D44B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA95FB8A282CDD9A005D44B6 /* DataModel.swift */,
+				FACD7794282D31770084A462 /* StockModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA95FB84282CDCC4005D44B6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA95FB72282CD7B7005D44B6 /* MarketListVC.swift */,
+				FA749AB6282EFC2D009EC272 /* StockDetailsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA95FB85282CDCD1005D44B6 /* NetWorkManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA95FB8F282CF9AF005D44B6 /* APIRequest.swift */,
+				FACD7796282D350B0084A462 /* URLS.swift */,
+			);
+			path = NetWorkManager;
+			sourceTree = "<group>";
+		};
+		FA95FB87282CDCEB005D44B6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD2F8A28336D7A0098A157 /* Extentions.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FA95FB8C282CE671005D44B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA95FB8D282CE67E005D44B6 /* MarketViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAAD2F932834C8140098A157 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA95FB77282CD7BC005D44B6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAAD2F942834C8280098A157 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FA95FB70282CD7B7005D44B6 /* SceneDelegate.swift */,
+				FA95FB6E282CD7B7005D44B6 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FAE832CB282D14A400D69646 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FABE5117282D1C4B0072FE45 /* StockCell.xib */,
+				FAE832CC282D14C200D69646 /* StockCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FA5A465E2832341E00312246 /* YFinanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5A46652832341E00312246 /* Build configuration list for PBXNativeTarget "YFinanceTests" */;
+			buildPhases = (
+				CD06895AD1EA01AA865ED159 /* [CP] Check Pods Manifest.lock */,
+				FA5A465B2832341E00312246 /* Sources */,
+				FA5A465C2832341E00312246 /* Frameworks */,
+				FA5A465D2832341E00312246 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA5A46642832341E00312246 /* PBXTargetDependency */,
+			);
+			name = YFinanceTests;
+			productName = YFinanceTests;
+			productReference = FA5A465F2832341E00312246 /* YFinanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FA95FB6A282CD7B7005D44B6 /* YFinance */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA95FB7F282CD7BC005D44B6 /* Build configuration list for PBXNativeTarget "YFinance" */;
 			buildPhases = (
+				65B7A1C5851C3E1B8F470080 /* [CP] Check Pods Manifest.lock */,
 				FA95FB67282CD7B7005D44B6 /* Sources */,
 				FA95FB68282CD7B7005D44B6 /* Frameworks */,
 				FA95FB69282CD7B7005D44B6 /* Resources */,
+				4737BE67D93113DB0C7E3236 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,6 +277,10 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					FA5A465E2832341E00312246 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = FA95FB6A282CD7B7005D44B6;
+					};
 					FA95FB6A282CD7B7005D44B6 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -116,35 +300,134 @@
 			projectRoot = "";
 			targets = (
 				FA95FB6A282CD7B7005D44B6 /* YFinance */,
+				FA5A465E2832341E00312246 /* YFinanceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FA5A465D2832341E00312246 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA95FB69282CD7B7005D44B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FA95FB7B282CD7BC005D44B6 /* LaunchScreen.storyboard in Resources */,
 				FA95FB78282CD7BC005D44B6 /* Assets.xcassets in Resources */,
+				FABE5118282D1C4B0072FE45 /* StockCell.xib in Resources */,
 				FA95FB76282CD7B7005D44B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4737BE67D93113DB0C7E3236 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YFinance/Pods-YFinance-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YFinance/Pods-YFinance-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YFinance/Pods-YFinance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65B7A1C5851C3E1B8F470080 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YFinance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD06895AD1EA01AA865ED159 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YFinanceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		FA5A465B2832341E00312246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAD2F89283247580098A157 /* APIRequestTest.swift in Sources */,
+				FAAD2F912833A9F50098A157 /* StockDetailsTest.swift in Sources */,
+				FA5A4669283234D100312246 /* MarketDataTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA95FB67282CD7B7005D44B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA95FB73282CD7B7005D44B6 /* ViewController.swift in Sources */,
+				FAE832CD282D14C200D69646 /* StockCell.swift in Sources */,
+				FACD7795282D31770084A462 /* StockModel.swift in Sources */,
+				FA95FB90282CF9AF005D44B6 /* APIRequest.swift in Sources */,
+				FA95FB8E282CE67E005D44B6 /* MarketViewModel.swift in Sources */,
+				FACD7797282D350B0084A462 /* URLS.swift in Sources */,
+				FA95FB73282CD7B7005D44B6 /* MarketListVC.swift in Sources */,
+				FA749AB7282EFC2D009EC272 /* StockDetailsVC.swift in Sources */,
+				FAAD2F8B28336D7B0098A157 /* Extentions.swift in Sources */,
 				FA95FB6F282CD7B7005D44B6 /* AppDelegate.swift in Sources */,
+				FA95FB8B282CDD9A005D44B6 /* DataModel.swift in Sources */,
 				FA95FB71282CD7B7005D44B6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA5A46642832341E00312246 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA95FB6A282CD7B7005D44B6 /* YFinance */;
+			targetProxy = FA5A46632832341E00312246 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FA95FB74282CD7B7005D44B6 /* Main.storyboard */ = {
@@ -166,6 +449,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FA5A46662832341E00312246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 833633361FFCC62D5ECFF0AE /* Pods-YFinanceTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GMG3RK77X;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YFinance.app.YFinanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YFinance.app/YFinance";
+			};
+			name = Debug;
+		};
+		FA5A46672832341E00312246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A88528BB0673FB9FE9363E7 /* Pods-YFinanceTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GMG3RK77X;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YFinance.app.YFinanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YFinance.app/YFinance";
+			};
+			name = Release;
+		};
 		FA95FB7D282CD7BC005D44B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -284,6 +615,7 @@
 		};
 		FA95FB80282CD7BC005D44B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0736E692AAA6F36EFFAB53C /* Pods-YFinance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +644,7 @@
 		};
 		FA95FB81282CD7BC005D44B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F258C1006223749E209A014 /* Pods-YFinance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,6 +674,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FA5A46652832341E00312246 /* Build configuration list for PBXNativeTarget "YFinanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5A46662832341E00312246 /* Debug */,
+				FA5A46672832341E00312246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FA95FB66282CD7B7005D44B6 /* Build configuration list for PBXProject "YFinance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

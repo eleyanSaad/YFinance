@@ -1,0 +1,6 @@
+framework module Pods_YFinance {
+  umbrella header "Pods-YFinance-umbrella.h"
+
+  export *
+  module * { export * }
+}

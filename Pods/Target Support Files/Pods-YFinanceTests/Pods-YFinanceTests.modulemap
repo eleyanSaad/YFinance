@@ -1,0 +1,6 @@
+framework module Pods_YFinanceTests {
+  umbrella header "Pods-YFinanceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
