@@ -27,7 +27,6 @@ class MarketListVC: UIViewController {
         setUpTimer()
         setUpTableView()
         getMarketSummaryData()
-        
     }
     
     // MARK: - FUNCATIONS
@@ -67,7 +66,7 @@ class MarketListVC: UIViewController {
     }
 
     @objc func runTimedCode(){
-//        userViewModelInstance.fetchUserList()
+        userViewModelInstance.fetchUserList()
     }
 }
 
