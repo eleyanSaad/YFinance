@@ -11,7 +11,7 @@ protocol APIRequestProtocol {
 class APIRequest: APIRequestProtocol {
     let headers = [
         "X-RapidAPI-Host": "yh-finance.p.rapidapi.com",
-        "X-RapidAPI-Key": "651d3f1222msh1f71ba4a0aaa6ccp12e7eejsnedc125c6eabe"
+        "X-RapidAPI-Key": "455590d3admsh1a0e077a455d06dp12dd4fjsndc7258ef54aa"
     ]
 
     let session = URLSession(configuration: .default)
